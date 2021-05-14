@@ -1,15 +1,14 @@
 fun main(args: Array<String>) {
+    val array = array(10)
+    println("La tabla del 6 será")
+    array.tablaMul.forEach{
+        print("6*${it/6} = ${it}")
 
-
-}
-
-class array{
-    val tamaño: Int = 10
-    fun array1() {
-        for (it in 0..10) {
-            val tabla1 = Array<Int>(tamaño) { (it * 6) }
-
-        }
-        println("Tabla de multiplicar ${array1()}")
     }
+
 }
+
+class array(val tamaño:Int){
+            val tablaMul = Array<Int>(tamaño){ it * 6 }
+
+    }
